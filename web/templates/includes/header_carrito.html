@@ -1,5 +1,5 @@
 <li class="h-cart">
-    <a class="cart-contents" href="cart.html">
+    <a class="cart-contents" href="{% url 'web:carrito'%}">
         <p class="h-cart-icon">
             <i class="ion-android-cart"></i>
             <span>{{request.session.cart.items|length}}</span>
